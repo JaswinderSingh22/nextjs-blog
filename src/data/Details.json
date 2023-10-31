@@ -1,0 +1,138 @@
+{
+  "details": {
+    "personal": {
+      "name": "jaswinder singh",
+      "age": "26",
+      "address": "#######",
+      "number": "#######"
+    },
+    "education": [
+      {
+        "name": "secondary",
+        "year": 2014,
+        "percentage": 100,
+        "link": "#"
+      },
+      {
+        "name": "seniorSecondary",
+        "year": 2016,
+        "percentage": 100,
+        "link": "#"
+      },
+      {
+        "name": "graduation",
+        "year": 2021,
+        "percentage": 100,
+        "link": "#"
+      }
+    ],
+    "professional": {
+      "interns": {
+        "first": {
+          "name": "fsdfsf",
+          "duration": 3,
+          "profiles": "sdfsf",
+          "link": "sfesfesfe"
+        },
+        "second": {
+          "name": "fesefef",
+          "profiles": "sfsefef",
+          "duration": 3,
+          "link": "#"
+        }
+      },
+      "carrer": {
+        "job1": {
+          "name": "Albanero Dev Pvt lmt",
+          "profiles": "sfsefef",
+          "duration": 3,
+          "projects": "sdfsfesf",
+          "description": "fsefesfesf",
+          "year":2022
+        },
+        "job2": {
+          "name": "Square Yards",
+          "profiles": "sfsefef",
+          "duration": 3,
+          "projects": "sdfsfesf",
+          "description": "fsefesfesf",
+          "year":2023
+        }
+      },
+      "projects": [
+        {
+          "name": "sfesfesf",
+          "tech": ["a", "b"],
+          "link": ""
+        },
+        {
+          "name": "sfesfesf",
+          "tech": ["a", "c"],
+          "link": ""
+        },
+        {
+          "name": "sfesfesf",
+          "tech": ["a", "b"],
+          "link": ""
+        },
+        {
+          "name": "sfesfesf",
+          "tech": ["a", "b"],
+          "link": ""
+        },
+        {
+          "name": "sfesfesf",
+          "tech": ["a", "b"],
+          "link": ""
+        },
+        {
+          "name": "sfesfesf",
+          "tech": ["a", "b"],
+          "link": ""
+        }
+      ],
+      "skills": [
+        {
+          "name": "JavaScript",
+          "level": 5,
+          "experience": 2
+        },
+        {
+          "name": "VUE Js",
+          "level": 3,
+          "experience": 2
+        },
+        {
+          "name": "REACT Js",
+          "level": 5,
+          "experience": 1
+        },
+        {
+          "name": "NEXT Js",
+          "level": 5,
+          "experience": 4
+        },
+        {
+          "name": "Tailwind",
+          "level": 5,
+          "experience": 2
+        },
+        {
+          "name": "HTML",
+          "level": 4.5,
+          "experience": 4
+        },
+        {
+          "name": "CSS",
+          "level": 3.5,
+          "experience": 2
+        },
+        {
+          "name": "SCSS",
+          "level": 5,
+          "experience": 2
+        }
+      ]
+    }
+  }
+}
