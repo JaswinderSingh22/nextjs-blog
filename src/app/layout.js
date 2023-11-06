@@ -3,7 +3,6 @@ import './globals.css'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Portfolio',
@@ -12,11 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar/>
+      <body className="bg-[#070707]">
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
-  )
+  );
 }

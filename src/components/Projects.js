@@ -4,13 +4,16 @@ import bgimg from "../assets/img1.jpeg";
 function Projects({ projects }) {
   console.log("projects:", projects);
   return (
-    <div className="flex flex-wrap justify-center ">
+    <div
+      id="projects"
+      className="flex w-11/12 m-auto rounded-2xl p-3 flex-wrap  justify-center "
+    >
       {projects.map((project, index) => (
         <a
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-1/4 h-[40vh] bg-yellow-200 m-2 p-3 rounded-lg transition duration-300 transform hover:scale-105"
+          className="w-[30%] h-[40vh] bg-yellow-200 m-2 p-3 rounded-lg transition duration-300 transform hover:scale-105"
           style={{ backgroundImage: `url(${bgimg.src})` }}
           key={index}
         >

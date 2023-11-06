@@ -13,7 +13,10 @@ function Skills({ skills }) {
     }
 
   return (
-    <div className="capitalise w-full h-full">
+    <div
+      id="skills"
+      className="capitalise w-11/12 h-[20rem] p-3 ml-auto mr-auto mt-10 mb-10  rounded-2xl"
+    >
       <ul className="flex items-center justify-around h-12 gap-2 p-1 cursor-pointer">
         {skills.map((skill, index) => (
           <li

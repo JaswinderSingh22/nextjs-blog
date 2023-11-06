@@ -2,35 +2,62 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import profileLogo from "../assets/profile2.jpeg"
+import profileLogo from "../assets/profile2.jpeg";
 
 const Navbar = () => {
-
   const profilePictureUrl = "/src/assets/profile.png";
+  const scrollToSection = (id) => {
+    console.log("id:", id);
+    console.log("document.getElementById(id):", document.getElementById(id));
+    const element = document.getElementById(id);
+    if (element) {
+      console.log("element:", element);
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="bg-black text-white w-full h-12 flex items-center justify-between mb-2">
+    <div className="bg-[#0e58cf] text-white w-full h-16 flex items-center justify-between mb-2">
       <div className="h-8 w-8 bg-red-200 rounded-full overflow-hidden mr-3 ml-4">
         <Image src={profileLogo} alt="Profile" width="auto" height="auto" />
       </div>
       <nav>
         <ul className="flex gap-5 mr-5">
-          <li className="transition duration-300 transform hover:scale-110">
-            <Link href="/">Home</Link>
+          <li
+            onClick={() => scrollToSection("intro")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            Home
           </li>
-          <li className="transition duration-300 transform hover:scale-110">
-            <Link href="/about">About</Link>
+          <li
+            onClick={() => scrollToSection("intro")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            About
           </li>
-          <li className="transition duration-300 transform hover:scale-110">
-            <Link href="/experience">Experience</Link>
+          <li
+            onClick={() => scrollToSection("experience")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            Experience
           </li>
-          <li className="transition duration-300 transform hover:scale-110">
-            <Link href="/skills">Skills</Link>
+          <li
+            onClick={() => scrollToSection("skills")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            Skills
           </li>
-          <li className="transition duration-300 transform hover:scale-110">
-            <Link href="/projects">Projects</Link>
+          <li
+            onClick={() => scrollToSection("projects")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            Projects
           </li>
-          <li className="transition duration-300 transform hover:scale-110">
-            <Link href="/contact">Contact Us</Link>
+          <li
+            onClick={() => scrollToSection("contact")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            Contact Us
           </li>
           {/* Add more navigation items */}
         </ul>
