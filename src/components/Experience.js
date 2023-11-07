@@ -3,14 +3,13 @@
 import React from "react";
 // import Details from "../../data/Details.json";
 function page({Details}) {
-  console.log("Details:", Details);
   const journey = Details.details.education;
   return (
     <div
       id="experience"
       className=" w-11/12 h-[40rem] m-auto flex flex-col gap-4 p-4 capitalize rounded-2xl"
     >
-      <h1 className="w-full h-16 flex items-center justify-center text-3xl text-center bg-slate-400 rounded-2xl">
+      <h1 className="w-full h-16 p-3 flex items-center justify-center text-3xl text-center bg-slate-400 rounded-2xl">
         JOURNEY
       </h1>
       <div className="overflow-auto">

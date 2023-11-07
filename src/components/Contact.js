@@ -27,10 +27,6 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    console.log("Email:", email);
-    console.log("Message:", message);
-    console.log("name:", name);
   };
 
   const socialLinks = [

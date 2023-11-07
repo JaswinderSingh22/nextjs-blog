@@ -12,8 +12,8 @@ export default function Home() {
       <div className="overflow-scroll flex flex-col h-[91vh] gap-5">
         <Intro />
         <Skills skills={Details.details.professional.skills} />
-        <Experience Details={Details} />
         <Projects projects={Details.details.professional.projects} />
+        <Experience Details={Details} />
         <Contact />
       </div>
     </main>

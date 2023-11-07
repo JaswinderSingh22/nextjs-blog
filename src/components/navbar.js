@@ -7,11 +7,8 @@ import profileLogo from "../assets/profile2.jpeg";
 const Navbar = () => {
   const profilePictureUrl = "/src/assets/profile.png";
   const scrollToSection = (id) => {
-    console.log("id:", id);
-    console.log("document.getElementById(id):", document.getElementById(id));
     const element = document.getElementById(id);
     if (element) {
-      console.log("element:", element);
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -22,7 +19,7 @@ const Navbar = () => {
         <Image src={profileLogo} alt="Profile" width="auto" height="auto" />
       </div>
       <nav>
-        <ul className="flex gap-5 mr-5">
+        <ul className="flex gap-10 font-bold mr-5">
           <li
             onClick={() => scrollToSection("intro")}
             className="transition duration-300 transform hover:scale-110"
@@ -30,28 +27,28 @@ const Navbar = () => {
             Home
           </li>
           <li
-            onClick={() => scrollToSection("intro")}
-            className="transition duration-300 transform hover:scale-110"
-          >
-            About
-          </li>
-          <li
-            onClick={() => scrollToSection("experience")}
-            className="transition duration-300 transform hover:scale-110"
-          >
-            Experience
-          </li>
-          <li
             onClick={() => scrollToSection("skills")}
             className="transition duration-300 transform hover:scale-110"
           >
             Skills
           </li>
+          {/* <li
+            onClick={() => scrollToSection("intro")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            About
+          </li> */}
           <li
             onClick={() => scrollToSection("projects")}
             className="transition duration-300 transform hover:scale-110"
           >
             Projects
+          </li>
+          <li
+            onClick={() => scrollToSection("experience")}
+            className="transition duration-300 transform hover:scale-110"
+          >
+            Journey
           </li>
           <li
             onClick={() => scrollToSection("contact")}

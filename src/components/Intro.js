@@ -7,9 +7,10 @@ function Intro() {
     <div className="w-full h-[50rem] text-white flex p-5 " id="intro">
       <div className="w-1/2 h-1/2">
         <Image
-          src={profileLogo} // Replace with the URL of your image
+          src={profileLogo}
           alt="Your Image"
           className="w-4/5 h-auto rounded-full transition-transform duration-500 transform hover:scale-105"
+          priority={true}
         />
       </div>
       <div className="w-1/2 p-8 transition-transform duration-500 transform hover:scale-105">
@@ -24,7 +25,6 @@ function Intro() {
           non proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.
         </p>
-        {/* Add more information about yourself */}
       </div>
     </div>
   );
