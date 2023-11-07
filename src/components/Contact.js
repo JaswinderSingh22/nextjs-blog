@@ -5,7 +5,9 @@ import {
   faTwitter,
   faLinkedin,
   faGithub,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -32,34 +34,42 @@ function Contact() {
   };
 
   const socialLinks = [
-    { icon: faTwitter, link: "your_twitter_link" }, // Replace with your Twitter profile link
+    { icon: faTwitter, link: "your_twitter_link" },
     {
       icon: faLinkedin,
       link: "https://www.linkedin.com/in/jaswinder-singh-8a8b90167?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9Yyhx5%2F5QMeWstLQz6kJpQ%3D%3D",
-    }, // Replace with your LinkedIn profile link
-    { icon: faGithub, link: "https://github.com/JaswinderSingh22" }, // Replace with your GitHub profile link
-    // Add more social links as needed
+    },
+    { icon: faGithub, link: "https://github.com/JaswinderSingh22" },
+    { icon: faEnvelope, link: "kkk" },
+    { icon: faWhatsapp, link: "kkk" },
   ];
   return (
     <div
       id="contact"
       className=" w-11/12 p-3 m-auto flex rounded-2xl mb-5 mt-5 h-[50rem]"
     >
-      <div className="flex w-1/2 max-h-[55vh] h-[50rem] mx-2 my-auto p-5  gap-5 rounded-2xl bg-red-300">
-        {socialLinks.map((item, index) => (
-          <a
-            key={index}
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={item.icon}
-              size="3x"
-              className="mr-[10px] cursor-pointer text-white"
-            />
-          </a>
-        ))}
+      <div className="flex flex-col justify-between w-1/2 max-h-[55vh] h-[50rem] mx-2 my-auto p-5   rounded-2xl bg-red-300">
+        <div>
+          LoreLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam
+        </div>
+        <div className="gap-5 mx-2 flex justify-around">
+          {socialLinks.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={item.icon}
+                size="3x"
+                className="mr-[10px] cursor-pointer text-white"
+              />
+            </a>
+          ))}
+        </div>
       </div>
       <form
         onSubmit={handleSubmit}
